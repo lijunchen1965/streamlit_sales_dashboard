@@ -1,0 +1,5 @@
+openpyxl
+pandas==2.2.3
+plotly==6.0.0
+streamlit==1.14.1
+plotly.express==0.4.1

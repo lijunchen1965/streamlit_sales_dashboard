@@ -1,6 +1,7 @@
 # sales dashboard from https://youtu.be/Sb0A9i6d320?si=-LS6HV_qCRK22L2N
 
 import pandas as pd
+import plotly as plt
 import plotly.express as px 
 import streamlit as st 
 
@@ -10,7 +11,7 @@ st.set_page_config(page_title="Sales Dashboard",
                    layout="wide"
 )
 
-@st.cache_data 
+@st.cache_data
 def get_data_from_excel():
     df = pd.read_excel(
         io='supermarkt_sales.xlsx',
